@@ -2,10 +2,8 @@
 Documentation  Common Functions Used In This Site
 Library  SeleniumLibrary
 Library  ../Libraries/Library.py
-
 Resource  Variables.robot
 Resource  Login.robot
-
 
 *** Keywords ***
 Open Page

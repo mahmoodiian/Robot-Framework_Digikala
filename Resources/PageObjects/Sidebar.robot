@@ -1,11 +1,9 @@
 *** Settings ***
 Documentation  Filter Keywords
 Library  SeleniumLibrary
-
 Resource  ../Variables.robot
 Resource  ../CommonFunctionality.robot
 Resource  ../WebElements.robot
-
 
 *** Keywords ***
 Add Filter

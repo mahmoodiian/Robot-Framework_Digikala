@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.7.3 on win32)" generated="20220218 00:48:23.707" rpa="false" schemaversion="2">
-<suite id="s1" name="RemoveProduct" source="P:\Python\Test\Test_RobotFramework\TestCases\RemoveProduct.robot">
-<test id="s1-t1" name="Test Remove Product">
+<robot generator="Robot 4.1.3 (Python 3.7.3 on win32)" generated="20220305 12:48:20.205" rpa="false" schemaversion="2">
+<suite id="s1" name="Availability" source="P:\Python\Test\Test_RobotFramework\TestCases\Availability.robot">
+<test id="s1-t1" name="Test Availability">
 <kw name="Run Keywords" library="BuiltIn" type="SETUP">
 <arg>Open Page</arg>
 <arg>Valid Login</arg>
@@ -10,30 +10,30 @@
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>${SPEED}</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20220218 00:48:24.044" endtime="20220218 00:48:24.045"/>
+<status status="PASS" starttime="20220305 12:48:20.464" endtime="20220305 12:48:20.464"/>
 </kw>
 <kw name="Set Selenium Timeout" library="SeleniumLibrary">
 <arg>${TIMEOUT}</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" starttime="20220218 00:48:24.045" endtime="20220218 00:48:24.045"/>
+<status status="PASS" starttime="20220305 12:48:20.465" endtime="20220305 12:48:20.465"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>${IMPLICIT_WAIT}</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20220218 00:48:24.046" endtime="20220218 00:48:24.046"/>
+<status status="PASS" starttime="20220305 12:48:20.465" endtime="20220305 12:48:20.465"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${DOMAIN}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220218 00:48:24.046" level="INFO">Opening browser 'chrome' to base url 'https://digikala.com/'.</msg>
-<status status="PASS" starttime="20220218 00:48:24.046" endtime="20220218 00:49:12.741"/>
+<msg timestamp="20220305 12:48:20.466" level="INFO">Opening browser 'chrome' to base url 'https://digikala.com/'.</msg>
+<status status="PASS" starttime="20220305 12:48:20.465" endtime="20220305 12:49:23.283"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220218 00:49:12.741" endtime="20220218 00:49:13.042"/>
+<status status="PASS" starttime="20220305 12:49:23.283" endtime="20220305 12:49:23.507"/>
 </kw>
-<status status="PASS" starttime="20220218 00:48:24.044" endtime="20220218 00:49:13.042"/>
+<status status="PASS" starttime="20220305 12:48:20.464" endtime="20220305 12:49:23.508"/>
 </kw>
 <kw name="Valid Login" library="CommonFunctionality">
 <kw name="Login" library="Login">
@@ -41,168 +41,187 @@
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${login_button}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220218 00:49:13.045" endtime="20220218 00:49:13.779"/>
+<status status="PASS" starttime="20220305 12:49:23.514" endtime="20220305 12:49:24.019"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${login_button}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220218 00:49:13.779" level="INFO">Clicking link 'Partial Link:ورود'.</msg>
-<status status="PASS" starttime="20220218 00:49:13.779" endtime="20220218 00:49:14.821"/>
+<msg timestamp="20220305 12:49:24.020" level="INFO">Clicking link 'Partial Link:ورود'.</msg>
+<status status="PASS" starttime="20220305 12:49:24.020" endtime="20220305 12:49:24.660"/>
 </kw>
-<status status="PASS" starttime="20220218 00:49:13.044" endtime="20220218 00:49:14.822"/>
+<status status="PASS" starttime="20220305 12:49:23.513" endtime="20220305 12:49:24.660"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${username_input}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220218 00:49:14.822" endtime="20220218 00:49:14.839"/>
+<status status="PASS" starttime="20220305 12:49:24.660" endtime="20220305 12:49:24.674"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${username_input}</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220218 00:49:14.840" level="INFO">Typing text '09194731285' into text field 'xpath://input[@name="username"]'.</msg>
-<status status="PASS" starttime="20220218 00:49:14.839" endtime="20220218 00:49:14.975"/>
+<msg timestamp="20220305 12:49:24.677" level="INFO">Typing text '09194731285' into text field 'xpath://input[@name="username"]'.</msg>
+<status status="PASS" starttime="20220305 12:49:24.674" endtime="20220305 12:49:24.781"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${submit}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220218 00:49:14.977" level="INFO">Clicking element 'xpath://button[@type="submit"]'.</msg>
-<status status="PASS" starttime="20220218 00:49:14.976" endtime="20220218 00:49:15.048"/>
+<msg timestamp="20220305 12:49:24.782" level="INFO">Clicking element 'xpath://button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20220305 12:49:24.781" endtime="20220305 12:49:24.856"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${password_input}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220218 00:49:15.049" endtime="20220218 00:49:15.189"/>
+<msg timestamp="20220305 12:49:35.739" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=98.0.4758.102)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FB7AC3+2587331]
+	Ordinal0 [0x00F4ADD1+2141649]
+	Ordinal0 [0x00E43BB8+1063864]
+	Ordinal0 [0x00E2C5D0+968144]
+	Ordinal0 [0x00E8AE49+1355337]
+	Ordinal0 [0x00E98192+1409426]
+	Ordinal0 [0x00E884A6+1344678]
+	Ordinal0 [0x00E653F6+1201142]
+	Ordinal0 [0x00E662E6+1204966]
+	GetHandleVerifier [0x0115DF22+1680738]
+	GetHandleVerifier [0x01210DBC+2413564]
+	GetHandleVerifier [0x0104D151+563089]
+	GetHandleVerifier [0x0104BF13+558419]
+	Ordinal0 [0x00F5081E+2164766]
+	Ordinal0 [0x00F55508+2184456]
+	Ordinal0 [0x00F55650+2184784]
+	Ordinal0 [0x00F5F5BC+2225596]
+	BaseThreadInitThunk [0x7525FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x771E7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x771E7A6E+238]
+</msg>
+<msg timestamp="20220305 12:49:35.744" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=98.0.4758.102)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FB7AC3+2587331]
+	Ordinal0 [0x00F4ADD1+2141649]
+	Ordinal0 [0x00E43BB8+1063864]
+	Ordinal0 [0x00E2C5D0+968144]
+	Ordinal0 [0x00E8AE49+1355337]
+	Ordinal0 [0x00E98192+1409426]
+	Ordinal0 [0x00E884A6+1344678]
+	Ordinal0 [0x00E653F6+1201142]
+	Ordinal0 [0x00E662E6+1204966]
+	GetHandleVerifier [0x0115DF22+1680738]
+	GetHandleVerifier [0x01210DBC+2413564]
+	GetHandleVerifier [0x0104D151+563089]
+	GetHandleVerifier [0x0104BF13+558419]
+	Ordinal0 [0x00F5081E+2164766]
+	Ordinal0 [0x00F55508+2184456]
+	Ordinal0 [0x00F55650+2184784]
+	Ordinal0 [0x00F5F5BC+2225596]
+	BaseThreadInitThunk [0x7525FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x771E7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x771E7A6E+238]
+</msg>
+<status status="FAIL" starttime="20220305 12:49:24.856" endtime="20220305 12:49:35.744"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${password_input}</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220218 00:49:15.190" level="INFO">Typing text 'M_123456789_m' into text field 'xpath://input[@name="password"]'.</msg>
-<status status="PASS" starttime="20220218 00:49:15.189" endtime="20220218 00:49:15.332"/>
+<status status="NOT RUN" starttime="20220305 12:49:35.744" endtime="20220305 12:49:35.744"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${submit}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220218 00:49:15.332" level="INFO">Clicking element 'xpath://button[@type="submit"]'.</msg>
-<status status="PASS" starttime="20220218 00:49:15.332" endtime="20220218 00:49:15.385"/>
+<status status="NOT RUN" starttime="20220305 12:49:35.744" endtime="20220305 12:49:35.744"/>
 </kw>
-<status status="PASS" starttime="20220218 00:49:13.044" endtime="20220218 00:49:15.385"/>
+<status status="FAIL" starttime="20220305 12:49:23.510" endtime="20220305 12:49:35.745"/>
 </kw>
 <kw name="Check Valid Login" library="Login">
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${account_button}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220218 00:49:15.385" endtime="20220218 00:49:16.593"/>
+<status status="NOT RUN" starttime="20220305 12:49:35.745" endtime="20220305 12:49:35.745"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${account_button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220218 00:49:16.594" level="INFO">Clicking element 'xpath://div[contains(@class, "profileButton")]'.</msg>
-<status status="PASS" starttime="20220218 00:49:16.593" endtime="20220218 00:49:22.723"/>
+<status status="FAIL" starttime="20220305 12:49:23.508" endtime="20220305 12:49:35.746"/>
 </kw>
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>${verify_login_contain}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220218 00:49:22.750" level="INFO">Current page contains text 'خروج'.</msg>
-<status status="PASS" starttime="20220218 00:49:22.723" endtime="20220218 00:49:22.750"/>
-</kw>
-<status status="PASS" starttime="20220218 00:49:15.385" endtime="20220218 00:49:22.750"/>
-</kw>
-<status status="PASS" starttime="20220218 00:49:13.043" endtime="20220218 00:49:22.750"/>
-</kw>
-<status status="PASS" starttime="20220218 00:48:24.044" endtime="20220218 00:49:22.751"/>
-</kw>
-<kw name="Click To Card Button" library="Header">
-<kw name="Press Keys" library="SeleniumLibrary">
-<arg>${cart_button}</arg>
-<arg>RETURN</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220218 00:49:22.752" level="INFO">Sending key(s) ('RETURN',) to xpath://a[@data-cro-id="header-cart"] element.</msg>
-<msg timestamp="20220218 00:49:23.418" level="INFO">Pressing special key RETURN to element.</msg>
-<msg timestamp="20220218 00:49:23.418" level="INFO">Releasing special key RETURN.</msg>
-<status status="PASS" starttime="20220218 00:49:22.751" endtime="20220218 00:49:23.497"/>
-</kw>
-<kw name="Invisible Element" library="CommonFunctionality">
-<arg>${cart_button_popup}</arg>
-<kw name="Get Path" library="Library">
-<var>${new_path}</var>
-<arg>${xpath}</arg>
-<msg timestamp="20220218 00:49:23.499" level="INFO">${new_path} = //*[contains(@class, "BaseLayoutMiniCart__popup")]</msg>
-<status status="PASS" starttime="20220218 00:49:23.498" endtime="20220218 00:49:23.499"/>
-</kw>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>document.evaluate('${new_path}', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).style.visibility = "hidden";</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220218 00:49:23.500" level="INFO">Executing JavaScript:
-document.evaluate('//*[contains(@class, "BaseLayoutMiniCart__popup")]', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).style.visibility = "hidden";
-Without any arguments.</msg>
-<status status="PASS" starttime="20220218 00:49:23.499" endtime="20220218 00:49:23.616"/>
-</kw>
-<status status="PASS" starttime="20220218 00:49:23.498" endtime="20220218 00:49:23.616"/>
-</kw>
-<status status="PASS" starttime="20220218 00:49:22.751" endtime="20220218 00:49:23.617"/>
-</kw>
-<kw name="Remove Product" library="Cart">
-<arg>${product_name}</arg>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${main_cart}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220218 00:49:23.618" endtime="20220218 00:49:23.748"/>
-</kw>
-<kw name="JavaScript Click Element" library="CommonFunctionality">
-<arg>${remove_button}</arg>
-<kw name="Get Path" library="Library">
-<var>${new_path}</var>
-<arg>${xpath}</arg>
-<msg timestamp="20220218 00:49:23.750" level="INFO">${new_path} = //*[@class="overflow-hidden"]//*[contains(text(), "گوشی موبایل اپل مدل iPhone 13 Pro Max A2644 دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 6 گیگابایت")]//ancestor::div[3]//*[@data-cro-id="cart-delete-item-ri...</msg>
-<status status="PASS" starttime="20220218 00:49:23.750" endtime="20220218 00:49:23.750"/>
-</kw>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>document.evaluate('${new_path}', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220218 00:49:23.751" level="INFO">Executing JavaScript:
-document.evaluate('//*[@class="overflow-hidden"]//*[contains(text(), "گوشی موبایل اپل مدل iPhone 13 Pro Max A2644 دو سیم‌ کارت ظرفیت 128 گیگابایت و رم 6 گیگابایت")]//ancestor::div[3]//*[@data-cro-id="cart-delete-item-right"]', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
-Without any arguments.</msg>
-<status status="PASS" starttime="20220218 00:49:23.750" endtime="20220218 00:49:23.803"/>
-</kw>
-<status status="PASS" starttime="20220218 00:49:23.749" endtime="20220218 00:49:23.803"/>
-</kw>
-<status status="PASS" starttime="20220218 00:49:23.618" endtime="20220218 00:49:23.804"/>
-</kw>
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>${page_contain}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220218 00:49:25.263" level="INFO">Current page contains text 'سبد خرید شما خالی است'.</msg>
-<status status="PASS" starttime="20220218 00:49:23.804" endtime="20220218 00:49:25.263"/>
+<status status="FAIL" starttime="20220305 12:48:20.464" endtime="20220305 12:49:35.746"/>
 </kw>
 <kw name="Close Page" library="CommonFunctionality" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220218 00:49:25.265" endtime="20220218 00:49:27.521"/>
+<status status="PASS" starttime="20220305 12:49:35.747" endtime="20220305 12:49:37.813"/>
 </kw>
-<status status="PASS" starttime="20220218 00:49:25.265" endtime="20220218 00:49:27.522"/>
+<status status="PASS" starttime="20220305 12:49:35.747" endtime="20220305 12:49:37.813"/>
 </kw>
-<tag>RemoveProducts</tag>
-<status status="PASS" starttime="20220218 00:48:24.043" endtime="20220218 00:49:27.524"/>
+<tag>Availability</tag>
+<status status="FAIL" starttime="20220305 12:48:20.463" endtime="20220305 12:49:37.814">Setup failed:
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=98.0.4758.102)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FB7AC3+2587331]
+	Ordinal0 [0x00F4ADD1+2141649]
+	Ordinal0 [0x00E43BB8+1063864]
+	Ordinal0 [0x00E2C5D0+968144]
+	Ordinal0 [0x00E8AE49+1355337]
+	Ordinal0 [0x00E98192+1409426]
+	Ordinal0 [0x00E884A6+1344678]
+	Ordinal0 [0x00E653F6+1201142]
+	Ordinal0 [0x00E662E6+1204966]
+	GetHandleVerifier [0x0115DF22+1680738]
+	GetHandleVerifier [0x01210DBC+2413564]
+	GetHandleVerifier [0x0104D151+563089]
+	GetHandleVerifier [0x0104BF13+558419]
+	Ordinal0 [0x00F5081E+2164766]
+	Ordinal0 [0x00F55508+2184456]
+	Ordinal0 [0x00F55650+2184784]
+	Ordinal0 [0x00F5F5BC+2225596]
+	BaseThreadInitThunk [0x7525FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x771E7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x771E7A6E+238]
+</status>
 </test>
-<doc>Remove Products From Cart</doc>
-<status status="PASS" starttime="20220218 00:48:23.710" endtime="20220218 00:49:27.529"/>
+<doc>Check Availability For A Product</doc>
+<status status="FAIL" starttime="20220305 12:48:20.207" endtime="20220305 12:49:37.816"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">RemoveProducts</stat>
+<stat pass="0" fail="1" skip="0">Availability</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="RemoveProduct">RemoveProduct</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Availability">Availability</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220218 00:48:24.034" level="ERROR">Error in file 'P:\Python\Test\Test_RobotFramework\Resources\PageObjects\Header.robot' on line 9: Setting variable '${main_category_button}' failed: Variable '${main_category}' not found.</msg>
-<msg timestamp="20220218 00:48:24.039" level="ERROR">Error in file 'P:\Python\Test\Test_RobotFramework\Resources\PageObjects\Header.robot' on line 10: Setting variable '${sub_category_button}' failed: Variable '${sub_category}' not found. Did you mean:
-    ${sub_categories}</msg>
+<msg timestamp="20220305 12:49:35.739" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=98.0.4758.102)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00FB7AC3+2587331]
+	Ordinal0 [0x00F4ADD1+2141649]
+	Ordinal0 [0x00E43BB8+1063864]
+	Ordinal0 [0x00E2C5D0+968144]
+	Ordinal0 [0x00E8AE49+1355337]
+	Ordinal0 [0x00E98192+1409426]
+	Ordinal0 [0x00E884A6+1344678]
+	Ordinal0 [0x00E653F6+1201142]
+	Ordinal0 [0x00E662E6+1204966]
+	GetHandleVerifier [0x0115DF22+1680738]
+	GetHandleVerifier [0x01210DBC+2413564]
+	GetHandleVerifier [0x0104D151+563089]
+	GetHandleVerifier [0x0104BF13+558419]
+	Ordinal0 [0x00F5081E+2164766]
+	Ordinal0 [0x00F55508+2184456]
+	Ordinal0 [0x00F55650+2184784]
+	Ordinal0 [0x00F5F5BC+2225596]
+	BaseThreadInitThunk [0x7525FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x771E7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x771E7A6E+238]
+</msg>
 </errors>
 </robot>

@@ -1,14 +1,11 @@
 *** Settings ***
 Documentation  Login Keywords
 Library  SeleniumLibrary
-
 Resource  Variables.robot
 Resource  PageObjects/Header.robot
 
-
 *** Variables ***
 ${verify_login_contain}  خروج
-
 
 *** Keywords ***
 Login

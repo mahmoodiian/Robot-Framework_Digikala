@@ -1,15 +1,12 @@
 *** Settings ***
 Documentation  Cart Keywords
 Library  SeleniumLibrary
-
 Resource  Variables.robot
 Resource  WebElements.robot
 Resource  PageObjects/Header.robot
 
-
 *** Variables ***
 ${remove_button}  ${main_cart}//*[contains(text(), "${product_name}")]//ancestor::div[3]//*[@data-cro-id="cart-delete-item-right"]
-
 
 *** Keywords ***
 Find Product Condition

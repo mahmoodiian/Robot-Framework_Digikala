@@ -1,14 +1,7 @@
 *** Settings ***
-Documentation
 Library  SeleniumLibrary
 Resource  ../Variables.robot
 Resource  ../WebElements.robot
-
-
-*** Variables ***
-${main_category_button}  ${main_categories}//*[contains(text(), "${main_category}")]
-${sub_category_button}  ${sub_categories}//*[contains(text(), "${sub_category}")]
-
 
 *** Keywords ***
 Add Text To Search Input And Enter
@@ -22,11 +15,14 @@ Click To Categories Button
 
 Select Main Category
     [Arguments]  ${main_category}
+    ${main_category_button}  Set Variable  ${main_categories}//*[contains(text(), "${main_category}")]
     Click To Categories Button
     Click Element  ${main_category_button}
 
 Select Sub Category
     [Arguments]  ${main_category}  ${sub_category}
+    ${main_category_button}  Set Variable  ${main_categories}//*[contains(text(), "${main_category}")]
+    ${sub_category_button}  Set Variable  ${sub_categories}//*[contains(text(), "${sub_category}")]
     Click To Categories Button
     Mouse Over  ${main_category_button}
     Click Element  ${sub_category_button}

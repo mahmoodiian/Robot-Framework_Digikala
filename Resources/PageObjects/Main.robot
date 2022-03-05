@@ -2,10 +2,8 @@
 Documentation  Main Keywords
 Library  SeleniumLibrary
 
-
 *** Variables ***
 ${let_me_know_contain}  دیگر لازم نیست خبرم کنید
-
 
 *** Keywords ***
 Run Condition Find Product
@@ -39,7 +37,7 @@ Click To Next Page
 Find And Click To Product
     [Arguments]  ${Product_name}
     ${product_link}  Set Variable  ${products_section}//*[contains(text(),"${Product_name}")]//ancestor::a
-    FOR  ${i}  IN RANGE  1000
+    FOR  ${i}  IN RANGE  100
     ${condition_find_product}  Run Keyword And Return Status  Run Condition Find Product  ${Product_name}
     ${condition_find_next_page}  Run Keyword And Return Status  Run Condition Next Page
 
