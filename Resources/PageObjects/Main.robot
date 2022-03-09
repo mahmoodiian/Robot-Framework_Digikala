@@ -2,9 +2,6 @@
 Documentation  Main Keywords
 Library  SeleniumLibrary
 
-*** Variables ***
-${let_me_know_contain}  دیگر لازم نیست خبرم کنید
-
 *** Keywords ***
 Run Condition Find Product
     [Arguments]  ${Product_name}
@@ -52,19 +49,3 @@ Buy Product
     Wait Until Element Is Enabled  ${add_to_cart}
     Scroll To Element  ${add_to_cart}
     JavaScript Click Element  ${add_to_cart}
-
-Enaible Let Me Know
-    Wait Until Page Contains Element  ${let_me_know_button}
-    JavaScript Click Element  ${let_me_know_button}
-    Wait Until Page Contains Element  ${let_me_know_digikala}
-    JavaScript Click Element  ${let_me_know_digikala}
-    Wait Until Page Contains Element  ${let_me_know_submit}
-    JavaScript Click Element  ${let_me_know_submit}
-    Page Should Contain  ${let_me_know_contain}
-
-Select Book Category
-    [Arguments]  ${category_name}
-    ${category_xpath}  Set Variable  xpath://*[text()="${category_name}"]
-    Wait Until Page Contains Element  ${category_xpath}
-    Scroll To Element  ${category_xpath}
-    JavaScript Click Element  ${category_xpath}
