@@ -3,7 +3,7 @@ Documentation  Check Category _ Data Driven
 Library  SeleniumLibrary
 Resource  ../Resources/CommonFunctionality.robot
 Resource  ../Resources/R_DDT_CheckCategory.robot
-Suite Setup  Run Keywords  Open Page   Valid Login
+Suite Setup  Run Keywords  Open Page  Valid Login
 Suite Teardown  Close Page
 Force Tags  CheckCategory
 Test Template  Go To Product

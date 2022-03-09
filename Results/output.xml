@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.7.3 on win32)" generated="20220305 12:48:20.205" rpa="false" schemaversion="2">
-<suite id="s1" name="Availability" source="P:\Python\Test\Test_RobotFramework\TestCases\Availability.robot">
-<test id="s1-t1" name="Test Availability">
+<robot generator="Robot 4.1.3 (Python 3.7.3 on win32)" generated="20220309 10:08:55.618" rpa="false" schemaversion="2">
+<suite id="s1" name="DDT CheckCategory" source="P:\Python\Test\Test_RobotFramework\TestCases\DDT_CheckCategory.robot">
 <kw name="Run Keywords" library="BuiltIn" type="SETUP">
 <arg>Open Page</arg>
 <arg>Valid Login</arg>
@@ -10,30 +9,30 @@
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>${SPEED}</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20220305 12:48:20.464" endtime="20220305 12:48:20.464"/>
+<status status="PASS" starttime="20220309 10:08:55.877" endtime="20220309 10:08:55.878"/>
 </kw>
 <kw name="Set Selenium Timeout" library="SeleniumLibrary">
 <arg>${TIMEOUT}</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" starttime="20220305 12:48:20.465" endtime="20220305 12:48:20.465"/>
+<status status="PASS" starttime="20220309 10:08:55.878" endtime="20220309 10:08:55.878"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>${IMPLICIT_WAIT}</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20220305 12:48:20.465" endtime="20220305 12:48:20.465"/>
+<status status="PASS" starttime="20220309 10:08:55.878" endtime="20220309 10:08:55.879"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${DOMAIN}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220305 12:48:20.466" level="INFO">Opening browser 'chrome' to base url 'https://digikala.com/'.</msg>
-<status status="PASS" starttime="20220305 12:48:20.465" endtime="20220305 12:49:23.283"/>
+<msg timestamp="20220309 10:08:55.879" level="INFO">Opening browser 'chrome' to base url 'https://digikala.com/'.</msg>
+<status status="PASS" starttime="20220309 10:08:55.879" endtime="20220309 10:09:22.125"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220305 12:49:23.283" endtime="20220305 12:49:23.507"/>
+<status status="PASS" starttime="20220309 10:09:22.126" endtime="20220309 10:09:22.291"/>
 </kw>
-<status status="PASS" starttime="20220305 12:48:20.464" endtime="20220305 12:49:23.508"/>
+<status status="PASS" starttime="20220309 10:08:55.877" endtime="20220309 10:09:22.291"/>
 </kw>
 <kw name="Valid Login" library="CommonFunctionality">
 <kw name="Login" library="Login">
@@ -41,187 +40,1197 @@
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${login_button}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220305 12:49:23.514" endtime="20220305 12:49:24.019"/>
+<status status="PASS" starttime="20220309 10:09:22.293" endtime="20220309 10:09:22.767"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${login_button}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220305 12:49:24.020" level="INFO">Clicking link 'Partial Link:ورود'.</msg>
-<status status="PASS" starttime="20220305 12:49:24.020" endtime="20220305 12:49:24.660"/>
+<msg timestamp="20220309 10:09:22.767" level="INFO">Clicking link 'Partial Link:ورود'.</msg>
+<status status="PASS" starttime="20220309 10:09:22.767" endtime="20220309 10:09:23.361"/>
 </kw>
-<status status="PASS" starttime="20220305 12:49:23.513" endtime="20220305 12:49:24.660"/>
+<status status="PASS" starttime="20220309 10:09:22.292" endtime="20220309 10:09:23.361"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${username_input}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220305 12:49:24.660" endtime="20220305 12:49:24.674"/>
+<status status="PASS" starttime="20220309 10:09:23.361" endtime="20220309 10:09:23.378"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${username_input}</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220305 12:49:24.677" level="INFO">Typing text '09194731285' into text field 'xpath://input[@name="username"]'.</msg>
-<status status="PASS" starttime="20220305 12:49:24.674" endtime="20220305 12:49:24.781"/>
+<msg timestamp="20220309 10:09:23.378" level="INFO">Typing text '09194731285' into text field 'xpath://input[@name="username"]'.</msg>
+<status status="PASS" starttime="20220309 10:09:23.378" endtime="20220309 10:09:23.478"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${submit}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220305 12:49:24.782" level="INFO">Clicking element 'xpath://button[@type="submit"]'.</msg>
-<status status="PASS" starttime="20220305 12:49:24.781" endtime="20220305 12:49:24.856"/>
+<msg timestamp="20220309 10:09:23.479" level="INFO">Clicking element 'xpath://button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20220309 10:09:23.478" endtime="20220309 10:09:23.537"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${password_input}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<msg timestamp="20220305 12:49:35.739" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=98.0.4758.102)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x00FB7AC3+2587331]
-	Ordinal0 [0x00F4ADD1+2141649]
-	Ordinal0 [0x00E43BB8+1063864]
-	Ordinal0 [0x00E2C5D0+968144]
-	Ordinal0 [0x00E8AE49+1355337]
-	Ordinal0 [0x00E98192+1409426]
-	Ordinal0 [0x00E884A6+1344678]
-	Ordinal0 [0x00E653F6+1201142]
-	Ordinal0 [0x00E662E6+1204966]
-	GetHandleVerifier [0x0115DF22+1680738]
-	GetHandleVerifier [0x01210DBC+2413564]
-	GetHandleVerifier [0x0104D151+563089]
-	GetHandleVerifier [0x0104BF13+558419]
-	Ordinal0 [0x00F5081E+2164766]
-	Ordinal0 [0x00F55508+2184456]
-	Ordinal0 [0x00F55650+2184784]
-	Ordinal0 [0x00F5F5BC+2225596]
-	BaseThreadInitThunk [0x7525FA29+25]
-	RtlGetAppContainerNamedObjectPath [0x771E7A9E+286]
-	RtlGetAppContainerNamedObjectPath [0x771E7A6E+238]
-</msg>
-<msg timestamp="20220305 12:49:35.744" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=98.0.4758.102)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x00FB7AC3+2587331]
-	Ordinal0 [0x00F4ADD1+2141649]
-	Ordinal0 [0x00E43BB8+1063864]
-	Ordinal0 [0x00E2C5D0+968144]
-	Ordinal0 [0x00E8AE49+1355337]
-	Ordinal0 [0x00E98192+1409426]
-	Ordinal0 [0x00E884A6+1344678]
-	Ordinal0 [0x00E653F6+1201142]
-	Ordinal0 [0x00E662E6+1204966]
-	GetHandleVerifier [0x0115DF22+1680738]
-	GetHandleVerifier [0x01210DBC+2413564]
-	GetHandleVerifier [0x0104D151+563089]
-	GetHandleVerifier [0x0104BF13+558419]
-	Ordinal0 [0x00F5081E+2164766]
-	Ordinal0 [0x00F55508+2184456]
-	Ordinal0 [0x00F55650+2184784]
-	Ordinal0 [0x00F5F5BC+2225596]
-	BaseThreadInitThunk [0x7525FA29+25]
-	RtlGetAppContainerNamedObjectPath [0x771E7A9E+286]
-	RtlGetAppContainerNamedObjectPath [0x771E7A6E+238]
-</msg>
-<status status="FAIL" starttime="20220305 12:49:24.856" endtime="20220305 12:49:35.744"/>
+<status status="PASS" starttime="20220309 10:09:23.537" endtime="20220309 10:09:23.607"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${password_input}</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220305 12:49:35.744" endtime="20220305 12:49:35.744"/>
+<msg timestamp="20220309 10:09:23.607" level="INFO">Typing text 'M_123456789_m' into text field 'xpath://input[@name="password"]'.</msg>
+<status status="PASS" starttime="20220309 10:09:23.607" endtime="20220309 10:09:23.697"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${submit}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220305 12:49:35.744" endtime="20220305 12:49:35.744"/>
+<msg timestamp="20220309 10:09:23.698" level="INFO">Clicking element 'xpath://button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20220309 10:09:23.698" endtime="20220309 10:09:23.743"/>
 </kw>
-<status status="FAIL" starttime="20220305 12:49:23.510" endtime="20220305 12:49:35.745"/>
+<status status="PASS" starttime="20220309 10:09:22.292" endtime="20220309 10:09:23.743"/>
 </kw>
 <kw name="Check Valid Login" library="Login">
-<status status="NOT RUN" starttime="20220305 12:49:35.745" endtime="20220305 12:49:35.745"/>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${account_button}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220309 10:09:23.744" endtime="20220309 10:09:24.500"/>
 </kw>
-<status status="FAIL" starttime="20220305 12:49:23.508" endtime="20220305 12:49:35.746"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${account_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:24.501" level="INFO">Clicking element 'xpath://div[contains(@class, "profileButton")]'.</msg>
+<status status="PASS" starttime="20220309 10:09:24.501" endtime="20220309 10:09:29.024"/>
 </kw>
-<status status="FAIL" starttime="20220305 12:48:20.464" endtime="20220305 12:49:35.746"/>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${verify_login_contain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220309 10:09:29.064" level="INFO">Current page contains text 'خروج'.</msg>
+<status status="PASS" starttime="20220309 10:09:29.025" endtime="20220309 10:09:29.064"/>
 </kw>
+<status status="PASS" starttime="20220309 10:09:23.744" endtime="20220309 10:09:29.065"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:22.291" endtime="20220309 10:09:29.065"/>
+</kw>
+<status status="PASS" starttime="20220309 10:08:55.877" endtime="20220309 10:09:29.065"/>
+</kw>
+<test id="s1-t1" name="Domestic Magazine">
+<kw name="Go To Product" library="R_DDT_CheckCategory">
+<arg>${main_category}</arg>
+<arg>${book_category_l1}</arg>
+<arg>${book_category_l2}</arg>
+<arg>${book_category_l3_1}</arg>
+<arg>${filter_name}</arg>
+<arg>${sub_filter_name}</arg>
+<arg>${product_name_1}</arg>
+<kw name="Select Main Category" library="Header">
+<arg>${main_category}</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${main_category_button}</var>
+<arg>${main_categories}//*[contains(text(), "${main_category}")]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220309 10:09:29.067" level="INFO">${main_category_button} = xpath://div[contains(@class, "mainCategoriesSection")]//*[contains(text(), "کتاب، لوازم تحریر و هنر")]</msg>
+<status status="PASS" starttime="20220309 10:09:29.067" endtime="20220309 10:09:29.067"/>
+</kw>
+<kw name="Click To Categories Button" library="Header">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${categories_button}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220309 10:09:29.068" endtime="20220309 10:09:29.079"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${categories_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:29.080" level="INFO">Clicking element 'xpath://span[@data-cro-id="header-main-menu"]'.</msg>
+<status status="PASS" starttime="20220309 10:09:29.080" endtime="20220309 10:09:29.186"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:29.067" endtime="20220309 10:09:29.186"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${main_category_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:29.187" level="INFO">Clicking element 'xpath://div[contains(@class, "mainCategoriesSection")]//*[contains(text(), "کتاب، لوازم تحریر و هنر")]'.</msg>
+<status status="PASS" starttime="20220309 10:09:29.186" endtime="20220309 10:09:30.565"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:29.066" endtime="20220309 10:09:30.565"/>
+</kw>
+<kw name="Select Book Category" library="Main">
+<arg>${book_category_l1}</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${category_xpath}</var>
+<arg>xpath://*[text()="${category_name}"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220309 10:09:30.568" level="INFO">${category_xpath} = xpath://*[text()="مجلات، نقشه و نشانگر کتاب"]</msg>
+<status status="PASS" starttime="20220309 10:09:30.567" endtime="20220309 10:09:30.568"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${category_xpath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220309 10:09:30.568" endtime="20220309 10:09:30.944"/>
+</kw>
+<kw name="Scroll To Element" library="CommonFunctionality">
+<arg>${category_xpath}</arg>
+<kw name="Get Horizontal Position" library="SeleniumLibrary">
+<var>${x}</var>
+<arg>${locator}</arg>
+<doc>Returns the horizontal position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:30.986" level="INFO">${x} = 943</msg>
+<status status="PASS" starttime="20220309 10:09:30.945" endtime="20220309 10:09:30.986"/>
+</kw>
+<kw name="Get Vertical Position" library="SeleniumLibrary">
+<var>${y}</var>
+<arg>${locator}</arg>
+<doc>Returns the vertical position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:31.004" level="INFO">${y} = 1031</msg>
+<status status="PASS" starttime="20220309 10:09:30.986" endtime="20220309 10:09:31.005"/>
+</kw>
+<kw name="Get Window Size" library="SeleniumLibrary">
+<var>${width}</var>
+<var>${height}</var>
+<doc>Returns current window width and height as integers.</doc>
+<msg timestamp="20220309 10:09:31.009" level="INFO">${width} = 1552</msg>
+<msg timestamp="20220309 10:09:31.009" level="INFO">${height} = 880</msg>
+<status status="PASS" starttime="20220309 10:09:31.005" endtime="20220309 10:09:31.010"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(${x} - ${width}, ${y} - ${height}/4.5)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:31.011" level="INFO">Executing JavaScript:
+window.scrollTo(943 - 1552, 1031 - 880/4.5)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:31.010" endtime="20220309 10:09:31.018"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:30.944" endtime="20220309 10:09:31.018"/>
+</kw>
+<kw name="JavaScript Click Element" library="CommonFunctionality">
+<arg>${category_xpath}</arg>
+<kw name="Get Path" library="Library">
+<var>${new_path}</var>
+<arg>${xpath}</arg>
+<msg timestamp="20220309 10:09:31.019" level="INFO">${new_path} = //*[text()="مجلات، نقشه و نشانگر کتاب"]</msg>
+<status status="PASS" starttime="20220309 10:09:31.019" endtime="20220309 10:09:31.019"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate('${new_path}', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:31.020" level="INFO">Executing JavaScript:
+document.evaluate('//*[text()="مجلات، نقشه و نشانگر کتاب"]', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:31.019" endtime="20220309 10:09:31.139"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:31.018" endtime="20220309 10:09:31.140"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:30.565" endtime="20220309 10:09:31.140"/>
+</kw>
+<kw name="Select Book Category" library="Main">
+<arg>${book_category_l2}</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${category_xpath}</var>
+<arg>xpath://*[text()="${category_name}"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220309 10:09:31.142" level="INFO">${category_xpath} = xpath://*[text()="مجلات"]</msg>
+<status status="PASS" starttime="20220309 10:09:31.141" endtime="20220309 10:09:31.142"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${category_xpath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220309 10:09:31.143" endtime="20220309 10:09:31.587"/>
+</kw>
+<kw name="Scroll To Element" library="CommonFunctionality">
+<arg>${category_xpath}</arg>
+<kw name="Get Horizontal Position" library="SeleniumLibrary">
+<var>${x}</var>
+<arg>${locator}</arg>
+<doc>Returns the horizontal position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:31.959" level="INFO">${x} = 1348</msg>
+<status status="PASS" starttime="20220309 10:09:31.588" endtime="20220309 10:09:31.959"/>
+</kw>
+<kw name="Get Vertical Position" library="SeleniumLibrary">
+<var>${y}</var>
+<arg>${locator}</arg>
+<doc>Returns the vertical position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:31.982" level="INFO">${y} = 390</msg>
+<status status="PASS" starttime="20220309 10:09:31.959" endtime="20220309 10:09:31.982"/>
+</kw>
+<kw name="Get Window Size" library="SeleniumLibrary">
+<var>${width}</var>
+<var>${height}</var>
+<doc>Returns current window width and height as integers.</doc>
+<msg timestamp="20220309 10:09:31.992" level="INFO">${width} = 1552</msg>
+<msg timestamp="20220309 10:09:31.992" level="INFO">${height} = 880</msg>
+<status status="PASS" starttime="20220309 10:09:31.982" endtime="20220309 10:09:31.992"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(${x} - ${width}, ${y} - ${height}/4.5)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:31.993" level="INFO">Executing JavaScript:
+window.scrollTo(1348 - 1552, 390 - 880/4.5)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:31.992" endtime="20220309 10:09:31.998"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:31.587" endtime="20220309 10:09:31.998"/>
+</kw>
+<kw name="JavaScript Click Element" library="CommonFunctionality">
+<arg>${category_xpath}</arg>
+<kw name="Get Path" library="Library">
+<var>${new_path}</var>
+<arg>${xpath}</arg>
+<msg timestamp="20220309 10:09:32.001" level="INFO">${new_path} = //*[text()="مجلات"]</msg>
+<status status="PASS" starttime="20220309 10:09:32.001" endtime="20220309 10:09:32.001"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate('${new_path}', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:32.003" level="INFO">Executing JavaScript:
+document.evaluate('//*[text()="مجلات"]', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:32.002" endtime="20220309 10:09:32.127"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:31.998" endtime="20220309 10:09:32.127"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:31.140" endtime="20220309 10:09:32.127"/>
+</kw>
+<kw name="Select Book Category" library="Main">
+<arg>${book_category_l3}</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${category_xpath}</var>
+<arg>xpath://*[text()="${category_name}"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220309 10:09:32.129" level="INFO">${category_xpath} = xpath://*[text()="مجلات داخلی"]</msg>
+<status status="PASS" starttime="20220309 10:09:32.128" endtime="20220309 10:09:32.129"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${category_xpath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220309 10:09:32.129" endtime="20220309 10:09:32.460"/>
+</kw>
+<kw name="Scroll To Element" library="CommonFunctionality">
+<arg>${category_xpath}</arg>
+<kw name="Get Horizontal Position" library="SeleniumLibrary">
+<var>${x}</var>
+<arg>${locator}</arg>
+<doc>Returns the horizontal position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:32.722" level="INFO">${x} = 1348</msg>
+<status status="PASS" starttime="20220309 10:09:32.461" endtime="20220309 10:09:32.722"/>
+</kw>
+<kw name="Get Vertical Position" library="SeleniumLibrary">
+<var>${y}</var>
+<arg>${locator}</arg>
+<doc>Returns the vertical position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:32.739" level="INFO">${y} = 390</msg>
+<status status="PASS" starttime="20220309 10:09:32.722" endtime="20220309 10:09:32.739"/>
+</kw>
+<kw name="Get Window Size" library="SeleniumLibrary">
+<var>${width}</var>
+<var>${height}</var>
+<doc>Returns current window width and height as integers.</doc>
+<msg timestamp="20220309 10:09:32.741" level="INFO">${width} = 1552</msg>
+<msg timestamp="20220309 10:09:32.742" level="INFO">${height} = 880</msg>
+<status status="PASS" starttime="20220309 10:09:32.739" endtime="20220309 10:09:32.742"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(${x} - ${width}, ${y} - ${height}/4.5)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:32.742" level="INFO">Executing JavaScript:
+window.scrollTo(1348 - 1552, 390 - 880/4.5)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:32.742" endtime="20220309 10:09:32.745"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:32.460" endtime="20220309 10:09:32.746"/>
+</kw>
+<kw name="JavaScript Click Element" library="CommonFunctionality">
+<arg>${category_xpath}</arg>
+<kw name="Get Path" library="Library">
+<var>${new_path}</var>
+<arg>${xpath}</arg>
+<msg timestamp="20220309 10:09:32.747" level="INFO">${new_path} = //*[text()="مجلات داخلی"]</msg>
+<status status="PASS" starttime="20220309 10:09:32.746" endtime="20220309 10:09:32.747"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate('${new_path}', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:32.747" level="INFO">Executing JavaScript:
+document.evaluate('//*[text()="مجلات داخلی"]', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:32.747" endtime="20220309 10:09:32.869"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:32.746" endtime="20220309 10:09:32.870"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:32.128" endtime="20220309 10:09:32.870"/>
+</kw>
+<kw name="Add Filters" library="Sidebar">
+<arg>${filter_name}</arg>
+<arg>${sub_filter_name}</arg>
+<for flavor="IN">
+<var>${filter_name}</var>
+<value>@{filters}</value>
+<iter>
+<var name="${filter_name}">نوع جلد</var>
+<kw name="Add Filter" library="Sidebar">
+<arg>${filters_section}//*[text()="${filter_name}"]</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${filter_name}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220309 10:09:32.874" endtime="20220309 10:09:33.357"/>
+</kw>
+<kw name="Scroll To Element" library="CommonFunctionality">
+<arg>${filter_name}</arg>
+<kw name="Get Horizontal Position" library="SeleniumLibrary">
+<var>${x}</var>
+<arg>${locator}</arg>
+<doc>Returns the horizontal position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:33.965" level="INFO">${x} = 1439</msg>
+<status status="PASS" starttime="20220309 10:09:33.358" endtime="20220309 10:09:33.965"/>
+</kw>
+<kw name="Get Vertical Position" library="SeleniumLibrary">
+<var>${y}</var>
+<arg>${locator}</arg>
+<doc>Returns the vertical position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:33.986" level="INFO">${y} = 840</msg>
+<status status="PASS" starttime="20220309 10:09:33.965" endtime="20220309 10:09:33.986"/>
+</kw>
+<kw name="Get Window Size" library="SeleniumLibrary">
+<var>${width}</var>
+<var>${height}</var>
+<doc>Returns current window width and height as integers.</doc>
+<msg timestamp="20220309 10:09:33.990" level="INFO">${width} = 1552</msg>
+<msg timestamp="20220309 10:09:33.990" level="INFO">${height} = 880</msg>
+<status status="PASS" starttime="20220309 10:09:33.987" endtime="20220309 10:09:33.990"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(${x} - ${width}, ${y} - ${height}/4.5)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:33.991" level="INFO">Executing JavaScript:
+window.scrollTo(1439 - 1552, 840 - 880/4.5)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:33.991" endtime="20220309 10:09:33.996"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:33.357" endtime="20220309 10:09:33.996"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${filter_name}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220309 10:09:33.996" endtime="20220309 10:09:34.025"/>
+</kw>
+<kw name="JavaScript Click Element" library="CommonFunctionality">
+<arg>${filter_name}</arg>
+<kw name="Get Path" library="Library">
+<var>${new_path}</var>
+<arg>${xpath}</arg>
+<msg timestamp="20220309 10:09:34.027" level="INFO">${new_path} = //div[contains(@class, "FilterList")]//*[text()="نوع جلد"]</msg>
+<status status="PASS" starttime="20220309 10:09:34.027" endtime="20220309 10:09:34.027"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate('${new_path}', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:34.028" level="INFO">Executing JavaScript:
+document.evaluate('//div[contains(@class, "FilterList")]//*[text()="نوع جلد"]', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:34.027" endtime="20220309 10:09:34.061"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:34.025" endtime="20220309 10:09:34.061"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:32.872" endtime="20220309 10:09:34.061"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:32.872" endtime="20220309 10:09:34.061"/>
+</iter>
+<iter>
+<var name="${filter_name}">کاغذی</var>
+<kw name="Add Filter" library="Sidebar">
+<arg>${filters_section}//*[text()="${filter_name}"]</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${filter_name}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220309 10:09:34.062" endtime="20220309 10:09:34.093"/>
+</kw>
+<kw name="Scroll To Element" library="CommonFunctionality">
+<arg>${filter_name}</arg>
+<kw name="Get Horizontal Position" library="SeleniumLibrary">
+<var>${x}</var>
+<arg>${locator}</arg>
+<doc>Returns the horizontal position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:34.115" level="INFO">${x} = 1413</msg>
+<status status="PASS" starttime="20220309 10:09:34.094" endtime="20220309 10:09:34.115"/>
+</kw>
+<kw name="Get Vertical Position" library="SeleniumLibrary">
+<var>${y}</var>
+<arg>${locator}</arg>
+<doc>Returns the vertical position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:34.134" level="INFO">${y} = 1129</msg>
+<status status="PASS" starttime="20220309 10:09:34.115" endtime="20220309 10:09:34.134"/>
+</kw>
+<kw name="Get Window Size" library="SeleniumLibrary">
+<var>${width}</var>
+<var>${height}</var>
+<doc>Returns current window width and height as integers.</doc>
+<msg timestamp="20220309 10:09:34.138" level="INFO">${width} = 1552</msg>
+<msg timestamp="20220309 10:09:34.139" level="INFO">${height} = 880</msg>
+<status status="PASS" starttime="20220309 10:09:34.134" endtime="20220309 10:09:34.139"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(${x} - ${width}, ${y} - ${height}/4.5)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:34.139" level="INFO">Executing JavaScript:
+window.scrollTo(1413 - 1552, 1129 - 880/4.5)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:34.139" endtime="20220309 10:09:34.147"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:34.094" endtime="20220309 10:09:34.147"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${filter_name}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220309 10:09:34.147" endtime="20220309 10:09:34.173"/>
+</kw>
+<kw name="JavaScript Click Element" library="CommonFunctionality">
+<arg>${filter_name}</arg>
+<kw name="Get Path" library="Library">
+<var>${new_path}</var>
+<arg>${xpath}</arg>
+<msg timestamp="20220309 10:09:34.173" level="INFO">${new_path} = //div[contains(@class, "FilterList")]//*[text()="کاغذی"]</msg>
+<status status="PASS" starttime="20220309 10:09:34.173" endtime="20220309 10:09:34.173"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate('${new_path}', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:34.174" level="INFO">Executing JavaScript:
+document.evaluate('//div[contains(@class, "FilterList")]//*[text()="کاغذی"]', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:34.174" endtime="20220309 10:09:34.296"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:34.173" endtime="20220309 10:09:34.296"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:34.061" endtime="20220309 10:09:34.296"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:34.061" endtime="20220309 10:09:34.296"/>
+</iter>
+<status status="PASS" starttime="20220309 10:09:32.871" endtime="20220309 10:09:34.296"/>
+</for>
+<status status="PASS" starttime="20220309 10:09:32.870" endtime="20220309 10:09:34.296"/>
+</kw>
+<kw name="Find And Click To Product" library="Main">
+<arg>${Product_name}</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${product_link}</var>
+<arg>${products_section}//*[contains(text(),"${Product_name}")]//ancestor::a</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220309 10:09:34.298" level="INFO">${product_link} = xpath://section[1]/div[2]/div/div//*[contains(text(),"فصلنامه صنایع و معادن")]//ancestor::a</msg>
+<status status="PASS" starttime="20220309 10:09:34.297" endtime="20220309 10:09:34.298"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>100</value>
+<iter>
+<var name="${i}">0</var>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${condition_find_product}</var>
+<arg>Run Condition Find Product</arg>
+<arg>${Product_name}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Run Condition Find Product" library="Main">
+<arg>${Product_name}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${Product_name}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220309 10:09:34.920" level="INFO">Current page contains text 'فصلنامه صنایع و معادن'.</msg>
+<status status="PASS" starttime="20220309 10:09:34.301" endtime="20220309 10:09:34.921"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:34.300" endtime="20220309 10:09:34.921"/>
+</kw>
+<msg timestamp="20220309 10:09:34.921" level="INFO">${condition_find_product} = True</msg>
+<status status="PASS" starttime="20220309 10:09:34.298" endtime="20220309 10:09:34.921"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${condition_find_next_page}</var>
+<arg>Run Condition Next Page</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Run Condition Next Page" library="Main">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${next_page}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220309 10:09:40.229" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-31.png"&gt;&lt;img src="selenium-screenshot-31.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220309 10:09:40.232" level="FAIL">Element with locator 'xpath://span[text()="بعدی"]' not found.</msg>
+<status status="FAIL" starttime="20220309 10:09:34.922" endtime="20220309 10:09:40.232"/>
+</kw>
+<status status="FAIL" starttime="20220309 10:09:34.922" endtime="20220309 10:09:40.233"/>
+</kw>
+<msg timestamp="20220309 10:09:40.233" level="INFO">${condition_find_next_page} = False</msg>
+<status status="PASS" starttime="20220309 10:09:34.921" endtime="20220309 10:09:40.233"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${condition_find_product}</arg>
+<arg>Exit For Loop</arg>
+<arg>ELSE IF</arg>
+<arg>${condition_find_next_page}</arg>
+<arg>Click To Next Page</arg>
+<arg>ELSE</arg>
+<arg>Scroll Products</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing for loop.</doc>
+<msg timestamp="20220309 10:09:40.234" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20220309 10:09:40.234" endtime="20220309 10:09:40.234"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:40.233" endtime="20220309 10:09:40.235"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:34.298" endtime="20220309 10:09:40.235"/>
+</iter>
+<status status="PASS" starttime="20220309 10:09:34.298" endtime="20220309 10:09:40.235"/>
+</for>
+<kw name="Click To Product" library="Main">
+<arg>${product_link}</arg>
+<kw name="Scroll To Element" library="CommonFunctionality">
+<arg>${product_link}</arg>
+<kw name="Get Horizontal Position" library="SeleniumLibrary">
+<var>${x}</var>
+<arg>${locator}</arg>
+<doc>Returns the horizontal position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:40.259" level="INFO">${x} = 897</msg>
+<status status="PASS" starttime="20220309 10:09:40.236" endtime="20220309 10:09:40.259"/>
+</kw>
+<kw name="Get Vertical Position" library="SeleniumLibrary">
+<var>${y}</var>
+<arg>${locator}</arg>
+<doc>Returns the vertical position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:40.274" level="INFO">${y} = 285</msg>
+<status status="PASS" starttime="20220309 10:09:40.260" endtime="20220309 10:09:40.274"/>
+</kw>
+<kw name="Get Window Size" library="SeleniumLibrary">
+<var>${width}</var>
+<var>${height}</var>
+<doc>Returns current window width and height as integers.</doc>
+<msg timestamp="20220309 10:09:40.278" level="INFO">${width} = 1552</msg>
+<msg timestamp="20220309 10:09:40.278" level="INFO">${height} = 880</msg>
+<status status="PASS" starttime="20220309 10:09:40.274" endtime="20220309 10:09:40.278"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(${x} - ${width}, ${y} - ${height}/4.5)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:40.279" level="INFO">Executing JavaScript:
+window.scrollTo(897 - 1552, 285 - 880/4.5)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:40.278" endtime="20220309 10:09:40.285"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:40.235" endtime="20220309 10:09:40.285"/>
+</kw>
+<kw name="JavaScript Click Element" library="CommonFunctionality">
+<arg>${product_link}</arg>
+<kw name="Get Path" library="Library">
+<var>${new_path}</var>
+<arg>${xpath}</arg>
+<msg timestamp="20220309 10:09:40.286" level="INFO">${new_path} = //section[1]/div[2]/div/div//*[contains(text(),"فصلنامه صنایع و معادن")]//ancestor::a</msg>
+<status status="PASS" starttime="20220309 10:09:40.286" endtime="20220309 10:09:40.286"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate('${new_path}', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:40.287" level="INFO">Executing JavaScript:
+document.evaluate('//section[1]/div[2]/div/div//*[contains(text(),"فصلنامه صنایع و معادن")]//ancestor::a', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:40.286" endtime="20220309 10:09:40.343"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:40.285" endtime="20220309 10:09:40.344"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${handle}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20220309 10:09:40.349" level="INFO">${handle} = ['CDwindow-494690CF5886AC5556416F31934EB91C', 'CDwindow-F5629E5E66F112DD7BD3B7BFAA32B09C']</msg>
+<status status="PASS" starttime="20220309 10:09:40.344" endtime="20220309 10:09:40.350"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handle}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220309 10:09:40.350" endtime="20220309 10:09:40.440"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:40.235" endtime="20220309 10:09:40.441"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:34.297" endtime="20220309 10:09:40.441"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${filter_name}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220309 10:09:45.554" level="INFO">Current page contains text 'نوع جلد'.</msg>
+<status status="PASS" starttime="20220309 10:09:40.441" endtime="20220309 10:09:45.554"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${sub_filter_name}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220309 10:09:45.575" level="INFO">Current page contains text 'کاغذی'.</msg>
+<status status="PASS" starttime="20220309 10:09:45.554" endtime="20220309 10:09:45.575"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:29.066" endtime="20220309 10:09:45.575"/>
+</kw>
+<tag>CheckCategory</tag>
+<status status="PASS" starttime="20220309 10:09:29.065" endtime="20220309 10:09:45.575"/>
+</test>
+<test id="s1-t2" name="Foreign Magazine">
+<kw name="Go To Product" library="R_DDT_CheckCategory">
+<arg>${main_category}</arg>
+<arg>${book_category_l1}</arg>
+<arg>${book_category_l2}</arg>
+<arg>${book_category_l3_2}</arg>
+<arg>${filter_name}</arg>
+<arg>${sub_filter_name}</arg>
+<arg>${product_name_2}</arg>
+<kw name="Select Main Category" library="Header">
+<arg>${main_category}</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${main_category_button}</var>
+<arg>${main_categories}//*[contains(text(), "${main_category}")]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220309 10:09:45.579" level="INFO">${main_category_button} = xpath://div[contains(@class, "mainCategoriesSection")]//*[contains(text(), "کتاب، لوازم تحریر و هنر")]</msg>
+<status status="PASS" starttime="20220309 10:09:45.578" endtime="20220309 10:09:45.579"/>
+</kw>
+<kw name="Click To Categories Button" library="Header">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${categories_button}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220309 10:09:45.579" endtime="20220309 10:09:45.590"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${categories_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:45.591" level="INFO">Clicking element 'xpath://span[@data-cro-id="header-main-menu"]'.</msg>
+<status status="PASS" starttime="20220309 10:09:45.590" endtime="20220309 10:09:45.663"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:45.579" endtime="20220309 10:09:45.663"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${main_category_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:45.664" level="INFO">Clicking element 'xpath://div[contains(@class, "mainCategoriesSection")]//*[contains(text(), "کتاب، لوازم تحریر و هنر")]'.</msg>
+<status status="PASS" starttime="20220309 10:09:45.663" endtime="20220309 10:09:45.948"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:45.578" endtime="20220309 10:09:45.948"/>
+</kw>
+<kw name="Select Book Category" library="Main">
+<arg>${book_category_l1}</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${category_xpath}</var>
+<arg>xpath://*[text()="${category_name}"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220309 10:09:45.949" level="INFO">${category_xpath} = xpath://*[text()="مجلات، نقشه و نشانگر کتاب"]</msg>
+<status status="PASS" starttime="20220309 10:09:45.949" endtime="20220309 10:09:45.949"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${category_xpath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220309 10:09:45.949" endtime="20220309 10:09:50.223"/>
+</kw>
+<kw name="Scroll To Element" library="CommonFunctionality">
+<arg>${category_xpath}</arg>
+<kw name="Get Horizontal Position" library="SeleniumLibrary">
+<var>${x}</var>
+<arg>${locator}</arg>
+<doc>Returns the horizontal position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:50.310" level="INFO">${x} = 943</msg>
+<status status="PASS" starttime="20220309 10:09:50.224" endtime="20220309 10:09:50.310"/>
+</kw>
+<kw name="Get Vertical Position" library="SeleniumLibrary">
+<var>${y}</var>
+<arg>${locator}</arg>
+<doc>Returns the vertical position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:50.340" level="INFO">${y} = 1047</msg>
+<status status="PASS" starttime="20220309 10:09:50.310" endtime="20220309 10:09:50.340"/>
+</kw>
+<kw name="Get Window Size" library="SeleniumLibrary">
+<var>${width}</var>
+<var>${height}</var>
+<doc>Returns current window width and height as integers.</doc>
+<msg timestamp="20220309 10:09:50.344" level="INFO">${width} = 1552</msg>
+<msg timestamp="20220309 10:09:50.344" level="INFO">${height} = 880</msg>
+<status status="PASS" starttime="20220309 10:09:50.340" endtime="20220309 10:09:50.344"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(${x} - ${width}, ${y} - ${height}/4.5)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:50.345" level="INFO">Executing JavaScript:
+window.scrollTo(943 - 1552, 1047 - 880/4.5)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:50.344" endtime="20220309 10:09:50.353"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:50.224" endtime="20220309 10:09:50.353"/>
+</kw>
+<kw name="JavaScript Click Element" library="CommonFunctionality">
+<arg>${category_xpath}</arg>
+<kw name="Get Path" library="Library">
+<var>${new_path}</var>
+<arg>${xpath}</arg>
+<msg timestamp="20220309 10:09:50.354" level="INFO">${new_path} = //*[text()="مجلات، نقشه و نشانگر کتاب"]</msg>
+<status status="PASS" starttime="20220309 10:09:50.354" endtime="20220309 10:09:50.354"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate('${new_path}', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:50.355" level="INFO">Executing JavaScript:
+document.evaluate('//*[text()="مجلات، نقشه و نشانگر کتاب"]', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:50.354" endtime="20220309 10:09:50.515"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:50.353" endtime="20220309 10:09:50.515"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:45.948" endtime="20220309 10:09:50.516"/>
+</kw>
+<kw name="Select Book Category" library="Main">
+<arg>${book_category_l2}</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${category_xpath}</var>
+<arg>xpath://*[text()="${category_name}"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220309 10:09:50.518" level="INFO">${category_xpath} = xpath://*[text()="مجلات"]</msg>
+<status status="PASS" starttime="20220309 10:09:50.517" endtime="20220309 10:09:50.518"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${category_xpath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220309 10:09:50.518" endtime="20220309 10:09:50.736"/>
+</kw>
+<kw name="Scroll To Element" library="CommonFunctionality">
+<arg>${category_xpath}</arg>
+<kw name="Get Horizontal Position" library="SeleniumLibrary">
+<var>${x}</var>
+<arg>${locator}</arg>
+<doc>Returns the horizontal position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:50.919" level="INFO">${x} = 1348</msg>
+<status status="PASS" starttime="20220309 10:09:50.737" endtime="20220309 10:09:50.919"/>
+</kw>
+<kw name="Get Vertical Position" library="SeleniumLibrary">
+<var>${y}</var>
+<arg>${locator}</arg>
+<doc>Returns the vertical position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:51.008" level="INFO">${y} = 390</msg>
+<status status="PASS" starttime="20220309 10:09:50.919" endtime="20220309 10:09:51.008"/>
+</kw>
+<kw name="Get Window Size" library="SeleniumLibrary">
+<var>${width}</var>
+<var>${height}</var>
+<doc>Returns current window width and height as integers.</doc>
+<msg timestamp="20220309 10:09:51.012" level="INFO">${width} = 1552</msg>
+<msg timestamp="20220309 10:09:51.012" level="INFO">${height} = 880</msg>
+<status status="PASS" starttime="20220309 10:09:51.008" endtime="20220309 10:09:51.012"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(${x} - ${width}, ${y} - ${height}/4.5)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:51.013" level="INFO">Executing JavaScript:
+window.scrollTo(1348 - 1552, 390 - 880/4.5)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:51.012" endtime="20220309 10:09:51.024"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:50.736" endtime="20220309 10:09:51.024"/>
+</kw>
+<kw name="JavaScript Click Element" library="CommonFunctionality">
+<arg>${category_xpath}</arg>
+<kw name="Get Path" library="Library">
+<var>${new_path}</var>
+<arg>${xpath}</arg>
+<msg timestamp="20220309 10:09:51.025" level="INFO">${new_path} = //*[text()="مجلات"]</msg>
+<status status="PASS" starttime="20220309 10:09:51.025" endtime="20220309 10:09:51.025"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate('${new_path}', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:51.026" level="INFO">Executing JavaScript:
+document.evaluate('//*[text()="مجلات"]', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:51.025" endtime="20220309 10:09:51.155"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:51.024" endtime="20220309 10:09:51.156"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:50.516" endtime="20220309 10:09:51.156"/>
+</kw>
+<kw name="Select Book Category" library="Main">
+<arg>${book_category_l3}</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${category_xpath}</var>
+<arg>xpath://*[text()="${category_name}"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220309 10:09:51.157" level="INFO">${category_xpath} = xpath://*[text()="مجلات خارجی"]</msg>
+<status status="PASS" starttime="20220309 10:09:51.156" endtime="20220309 10:09:51.157"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${category_xpath}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220309 10:09:51.157" endtime="20220309 10:09:51.373"/>
+</kw>
+<kw name="Scroll To Element" library="CommonFunctionality">
+<arg>${category_xpath}</arg>
+<kw name="Get Horizontal Position" library="SeleniumLibrary">
+<var>${x}</var>
+<arg>${locator}</arg>
+<doc>Returns the horizontal position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:51.415" level="INFO">${x} = 1161</msg>
+<status status="PASS" starttime="20220309 10:09:51.374" endtime="20220309 10:09:51.415"/>
+</kw>
+<kw name="Get Vertical Position" library="SeleniumLibrary">
+<var>${y}</var>
+<arg>${locator}</arg>
+<doc>Returns the vertical position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:51.441" level="INFO">${y} = 390</msg>
+<status status="PASS" starttime="20220309 10:09:51.416" endtime="20220309 10:09:51.441"/>
+</kw>
+<kw name="Get Window Size" library="SeleniumLibrary">
+<var>${width}</var>
+<var>${height}</var>
+<doc>Returns current window width and height as integers.</doc>
+<msg timestamp="20220309 10:09:51.502" level="INFO">${width} = 1552</msg>
+<msg timestamp="20220309 10:09:51.502" level="INFO">${height} = 880</msg>
+<status status="PASS" starttime="20220309 10:09:51.442" endtime="20220309 10:09:51.502"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(${x} - ${width}, ${y} - ${height}/4.5)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:51.503" level="INFO">Executing JavaScript:
+window.scrollTo(1161 - 1552, 390 - 880/4.5)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:51.502" endtime="20220309 10:09:51.510"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:51.373" endtime="20220309 10:09:51.510"/>
+</kw>
+<kw name="JavaScript Click Element" library="CommonFunctionality">
+<arg>${category_xpath}</arg>
+<kw name="Get Path" library="Library">
+<var>${new_path}</var>
+<arg>${xpath}</arg>
+<msg timestamp="20220309 10:09:51.511" level="INFO">${new_path} = //*[text()="مجلات خارجی"]</msg>
+<status status="PASS" starttime="20220309 10:09:51.511" endtime="20220309 10:09:51.511"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate('${new_path}', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:51.512" level="INFO">Executing JavaScript:
+document.evaluate('//*[text()="مجلات خارجی"]', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:51.511" endtime="20220309 10:09:51.647"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:51.510" endtime="20220309 10:09:51.648"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:51.156" endtime="20220309 10:09:51.649"/>
+</kw>
+<kw name="Add Filters" library="Sidebar">
+<arg>${filter_name}</arg>
+<arg>${sub_filter_name}</arg>
+<for flavor="IN">
+<var>${filter_name}</var>
+<value>@{filters}</value>
+<iter>
+<var name="${filter_name}">نوع جلد</var>
+<kw name="Add Filter" library="Sidebar">
+<arg>${filters_section}//*[text()="${filter_name}"]</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${filter_name}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220309 10:09:51.653" endtime="20220309 10:09:52.100"/>
+</kw>
+<kw name="Scroll To Element" library="CommonFunctionality">
+<arg>${filter_name}</arg>
+<kw name="Get Horizontal Position" library="SeleniumLibrary">
+<var>${x}</var>
+<arg>${locator}</arg>
+<doc>Returns the horizontal position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:52.196" level="INFO">${x} = 1439</msg>
+<status status="PASS" starttime="20220309 10:09:52.101" endtime="20220309 10:09:52.196"/>
+</kw>
+<kw name="Get Vertical Position" library="SeleniumLibrary">
+<var>${y}</var>
+<arg>${locator}</arg>
+<doc>Returns the vertical position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:52.452" level="INFO">${y} = 782</msg>
+<status status="PASS" starttime="20220309 10:09:52.196" endtime="20220309 10:09:52.452"/>
+</kw>
+<kw name="Get Window Size" library="SeleniumLibrary">
+<var>${width}</var>
+<var>${height}</var>
+<doc>Returns current window width and height as integers.</doc>
+<msg timestamp="20220309 10:09:52.455" level="INFO">${width} = 1552</msg>
+<msg timestamp="20220309 10:09:52.455" level="INFO">${height} = 880</msg>
+<status status="PASS" starttime="20220309 10:09:52.452" endtime="20220309 10:09:52.455"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(${x} - ${width}, ${y} - ${height}/4.5)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:52.456" level="INFO">Executing JavaScript:
+window.scrollTo(1439 - 1552, 782 - 880/4.5)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:52.455" endtime="20220309 10:09:52.461"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:52.100" endtime="20220309 10:09:52.461"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${filter_name}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220309 10:09:52.461" endtime="20220309 10:09:52.489"/>
+</kw>
+<kw name="JavaScript Click Element" library="CommonFunctionality">
+<arg>${filter_name}</arg>
+<kw name="Get Path" library="Library">
+<var>${new_path}</var>
+<arg>${xpath}</arg>
+<msg timestamp="20220309 10:09:52.490" level="INFO">${new_path} = //div[contains(@class, "FilterList")]//*[text()="نوع جلد"]</msg>
+<status status="PASS" starttime="20220309 10:09:52.490" endtime="20220309 10:09:52.490"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate('${new_path}', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:52.490" level="INFO">Executing JavaScript:
+document.evaluate('//div[contains(@class, "FilterList")]//*[text()="نوع جلد"]', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:52.490" endtime="20220309 10:09:52.518"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:52.489" endtime="20220309 10:09:52.518"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:51.651" endtime="20220309 10:09:52.518"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:51.650" endtime="20220309 10:09:52.518"/>
+</iter>
+<iter>
+<var name="${filter_name}">کاغذی</var>
+<kw name="Add Filter" library="Sidebar">
+<arg>${filters_section}//*[text()="${filter_name}"]</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${filter_name}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220309 10:09:52.519" endtime="20220309 10:09:52.541"/>
+</kw>
+<kw name="Scroll To Element" library="CommonFunctionality">
+<arg>${filter_name}</arg>
+<kw name="Get Horizontal Position" library="SeleniumLibrary">
+<var>${x}</var>
+<arg>${locator}</arg>
+<doc>Returns the horizontal position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:52.562" level="INFO">${x} = 1413</msg>
+<status status="PASS" starttime="20220309 10:09:52.541" endtime="20220309 10:09:52.562"/>
+</kw>
+<kw name="Get Vertical Position" library="SeleniumLibrary">
+<var>${y}</var>
+<arg>${locator}</arg>
+<doc>Returns the vertical position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:52.592" level="INFO">${y} = 957</msg>
+<status status="PASS" starttime="20220309 10:09:52.562" endtime="20220309 10:09:52.592"/>
+</kw>
+<kw name="Get Window Size" library="SeleniumLibrary">
+<var>${width}</var>
+<var>${height}</var>
+<doc>Returns current window width and height as integers.</doc>
+<msg timestamp="20220309 10:09:52.595" level="INFO">${width} = 1552</msg>
+<msg timestamp="20220309 10:09:52.595" level="INFO">${height} = 880</msg>
+<status status="PASS" starttime="20220309 10:09:52.593" endtime="20220309 10:09:52.595"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(${x} - ${width}, ${y} - ${height}/4.5)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:52.596" level="INFO">Executing JavaScript:
+window.scrollTo(1413 - 1552, 957 - 880/4.5)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:52.595" endtime="20220309 10:09:52.606"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:52.541" endtime="20220309 10:09:52.606"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${filter_name}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220309 10:09:52.606" endtime="20220309 10:09:52.638"/>
+</kw>
+<kw name="JavaScript Click Element" library="CommonFunctionality">
+<arg>${filter_name}</arg>
+<kw name="Get Path" library="Library">
+<var>${new_path}</var>
+<arg>${xpath}</arg>
+<msg timestamp="20220309 10:09:52.639" level="INFO">${new_path} = //div[contains(@class, "FilterList")]//*[text()="کاغذی"]</msg>
+<status status="PASS" starttime="20220309 10:09:52.638" endtime="20220309 10:09:52.639"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate('${new_path}', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:52.639" level="INFO">Executing JavaScript:
+document.evaluate('//div[contains(@class, "FilterList")]//*[text()="کاغذی"]', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:52.639" endtime="20220309 10:09:52.739"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:52.638" endtime="20220309 10:09:52.739"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:52.518" endtime="20220309 10:09:52.739"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:52.518" endtime="20220309 10:09:52.739"/>
+</iter>
+<status status="PASS" starttime="20220309 10:09:51.650" endtime="20220309 10:09:52.740"/>
+</for>
+<status status="PASS" starttime="20220309 10:09:51.649" endtime="20220309 10:09:52.740"/>
+</kw>
+<kw name="Find And Click To Product" library="Main">
+<arg>${Product_name}</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${product_link}</var>
+<arg>${products_section}//*[contains(text(),"${Product_name}")]//ancestor::a</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220309 10:09:52.742" level="INFO">${product_link} = xpath://section[1]/div[2]/div/div//*[contains(text(),"مجله IRON MAN SELF-MADE MAN 1 فوریه 2020")]//ancestor::a</msg>
+<status status="PASS" starttime="20220309 10:09:52.741" endtime="20220309 10:09:52.742"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>100</value>
+<iter>
+<var name="${i}">0</var>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${condition_find_product}</var>
+<arg>Run Condition Find Product</arg>
+<arg>${Product_name}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Run Condition Find Product" library="Main">
+<arg>${Product_name}</arg>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${Product_name}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220309 10:09:53.447" level="INFO">Current page contains text 'مجله IRON MAN SELF-MADE MAN 1 فوریه 2020'.</msg>
+<status status="PASS" starttime="20220309 10:09:52.743" endtime="20220309 10:09:53.448"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:52.742" endtime="20220309 10:09:53.448"/>
+</kw>
+<msg timestamp="20220309 10:09:53.448" level="INFO">${condition_find_product} = True</msg>
+<status status="PASS" starttime="20220309 10:09:52.742" endtime="20220309 10:09:53.448"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${condition_find_next_page}</var>
+<arg>Run Condition Next Page</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Run Condition Next Page" library="Main">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${next_page}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20220309 10:09:54.249" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-32.png"&gt;&lt;img src="selenium-screenshot-32.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220309 10:09:54.250" level="FAIL">The element 'xpath://span[text()="بعدی"]' should be visible, but it is not.</msg>
+<status status="FAIL" starttime="20220309 10:09:53.449" endtime="20220309 10:09:54.250"/>
+</kw>
+<status status="FAIL" starttime="20220309 10:09:53.449" endtime="20220309 10:09:54.251"/>
+</kw>
+<msg timestamp="20220309 10:09:54.251" level="INFO">${condition_find_next_page} = False</msg>
+<status status="PASS" starttime="20220309 10:09:53.448" endtime="20220309 10:09:54.251"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${condition_find_product}</arg>
+<arg>Exit For Loop</arg>
+<arg>ELSE IF</arg>
+<arg>${condition_find_next_page}</arg>
+<arg>Click To Next Page</arg>
+<arg>ELSE</arg>
+<arg>Scroll Products</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing for loop.</doc>
+<msg timestamp="20220309 10:09:54.252" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20220309 10:09:54.252" endtime="20220309 10:09:54.252"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:54.252" endtime="20220309 10:09:54.253"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:52.742" endtime="20220309 10:09:54.253"/>
+</iter>
+<status status="PASS" starttime="20220309 10:09:52.742" endtime="20220309 10:09:54.253"/>
+</for>
+<kw name="Click To Product" library="Main">
+<arg>${product_link}</arg>
+<kw name="Scroll To Element" library="CommonFunctionality">
+<arg>${product_link}</arg>
+<kw name="Get Horizontal Position" library="SeleniumLibrary">
+<var>${x}</var>
+<arg>${locator}</arg>
+<doc>Returns the horizontal position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:54.278" level="INFO">${x} = 605</msg>
+<status status="PASS" starttime="20220309 10:09:54.254" endtime="20220309 10:09:54.278"/>
+</kw>
+<kw name="Get Vertical Position" library="SeleniumLibrary">
+<var>${y}</var>
+<arg>${locator}</arg>
+<doc>Returns the vertical position of the element identified by ``locator``.</doc>
+<msg timestamp="20220309 10:09:54.296" level="INFO">${y} = 285</msg>
+<status status="PASS" starttime="20220309 10:09:54.278" endtime="20220309 10:09:54.296"/>
+</kw>
+<kw name="Get Window Size" library="SeleniumLibrary">
+<var>${width}</var>
+<var>${height}</var>
+<doc>Returns current window width and height as integers.</doc>
+<msg timestamp="20220309 10:09:54.302" level="INFO">${width} = 1552</msg>
+<msg timestamp="20220309 10:09:54.302" level="INFO">${height} = 880</msg>
+<status status="PASS" starttime="20220309 10:09:54.297" endtime="20220309 10:09:54.302"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(${x} - ${width}, ${y} - ${height}/4.5)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:54.303" level="INFO">Executing JavaScript:
+window.scrollTo(605 - 1552, 285 - 880/4.5)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:54.302" endtime="20220309 10:09:54.308"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:54.253" endtime="20220309 10:09:54.308"/>
+</kw>
+<kw name="JavaScript Click Element" library="CommonFunctionality">
+<arg>${product_link}</arg>
+<kw name="Get Path" library="Library">
+<var>${new_path}</var>
+<arg>${xpath}</arg>
+<msg timestamp="20220309 10:09:54.309" level="INFO">${new_path} = //section[1]/div[2]/div/div//*[contains(text(),"مجله IRON MAN SELF-MADE MAN 1 فوریه 2020")]//ancestor::a</msg>
+<status status="PASS" starttime="20220309 10:09:54.309" endtime="20220309 10:09:54.309"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.evaluate('${new_path}', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220309 10:09:54.310" level="INFO">Executing JavaScript:
+document.evaluate('//section[1]/div[2]/div/div//*[contains(text(),"مجله IRON MAN SELF-MADE MAN 1 فوریه 2020")]//ancestor::a', document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null).snapshotItem(0).click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20220309 10:09:54.309" endtime="20220309 10:09:54.374"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:54.308" endtime="20220309 10:09:54.374"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${handle}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20220309 10:09:54.379" level="INFO">${handle} = ['CDwindow-494690CF5886AC5556416F31934EB91C', 'CDwindow-F5629E5E66F112DD7BD3B7BFAA32B09C', 'CDwindow-63AEE1D756A622634FAD7925DD1EF061']</msg>
+<status status="PASS" starttime="20220309 10:09:54.375" endtime="20220309 10:09:54.379"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handle}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220309 10:09:54.379" endtime="20220309 10:09:54.487"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:54.253" endtime="20220309 10:09:54.488"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:52.740" endtime="20220309 10:09:54.489"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${filter_name}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220309 10:09:54.663" level="INFO">Current page contains text 'نوع جلد'.</msg>
+<status status="PASS" starttime="20220309 10:09:54.489" endtime="20220309 10:09:54.663"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${sub_filter_name}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220309 10:09:54.691" level="INFO">Current page contains text 'کاغذی'.</msg>
+<status status="PASS" starttime="20220309 10:09:54.664" endtime="20220309 10:09:54.691"/>
+</kw>
+<status status="PASS" starttime="20220309 10:09:45.577" endtime="20220309 10:09:54.691"/>
+</kw>
+<tag>CheckCategory</tag>
+<status status="PASS" starttime="20220309 10:09:45.576" endtime="20220309 10:09:54.692"/>
+</test>
 <kw name="Close Page" library="CommonFunctionality" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220305 12:49:35.747" endtime="20220305 12:49:37.813"/>
+<status status="PASS" starttime="20220309 10:09:54.694" endtime="20220309 10:09:56.884"/>
 </kw>
-<status status="PASS" starttime="20220305 12:49:35.747" endtime="20220305 12:49:37.813"/>
+<status status="PASS" starttime="20220309 10:09:54.694" endtime="20220309 10:09:56.885"/>
 </kw>
-<tag>Availability</tag>
-<status status="FAIL" starttime="20220305 12:48:20.463" endtime="20220305 12:49:37.814">Setup failed:
-NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=98.0.4758.102)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x00FB7AC3+2587331]
-	Ordinal0 [0x00F4ADD1+2141649]
-	Ordinal0 [0x00E43BB8+1063864]
-	Ordinal0 [0x00E2C5D0+968144]
-	Ordinal0 [0x00E8AE49+1355337]
-	Ordinal0 [0x00E98192+1409426]
-	Ordinal0 [0x00E884A6+1344678]
-	Ordinal0 [0x00E653F6+1201142]
-	Ordinal0 [0x00E662E6+1204966]
-	GetHandleVerifier [0x0115DF22+1680738]
-	GetHandleVerifier [0x01210DBC+2413564]
-	GetHandleVerifier [0x0104D151+563089]
-	GetHandleVerifier [0x0104BF13+558419]
-	Ordinal0 [0x00F5081E+2164766]
-	Ordinal0 [0x00F55508+2184456]
-	Ordinal0 [0x00F55650+2184784]
-	Ordinal0 [0x00F5F5BC+2225596]
-	BaseThreadInitThunk [0x7525FA29+25]
-	RtlGetAppContainerNamedObjectPath [0x771E7A9E+286]
-	RtlGetAppContainerNamedObjectPath [0x771E7A6E+238]
-</status>
-</test>
-<doc>Check Availability For A Product</doc>
-<status status="FAIL" starttime="20220305 12:48:20.207" endtime="20220305 12:49:37.816"/>
+<doc>Check Category _ Data Driven</doc>
+<status status="PASS" starttime="20220309 10:08:55.619" endtime="20220309 10:09:56.885"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">Availability</stat>
+<stat pass="2" fail="0" skip="0">CheckCategory</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Availability">Availability</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="DDT CheckCategory">DDT CheckCategory</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220305 12:49:35.739" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=98.0.4758.102)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x00FB7AC3+2587331]
-	Ordinal0 [0x00F4ADD1+2141649]
-	Ordinal0 [0x00E43BB8+1063864]
-	Ordinal0 [0x00E2C5D0+968144]
-	Ordinal0 [0x00E8AE49+1355337]
-	Ordinal0 [0x00E98192+1409426]
-	Ordinal0 [0x00E884A6+1344678]
-	Ordinal0 [0x00E653F6+1201142]
-	Ordinal0 [0x00E662E6+1204966]
-	GetHandleVerifier [0x0115DF22+1680738]
-	GetHandleVerifier [0x01210DBC+2413564]
-	GetHandleVerifier [0x0104D151+563089]
-	GetHandleVerifier [0x0104BF13+558419]
-	Ordinal0 [0x00F5081E+2164766]
-	Ordinal0 [0x00F55508+2184456]
-	Ordinal0 [0x00F55650+2184784]
-	Ordinal0 [0x00F5F5BC+2225596]
-	BaseThreadInitThunk [0x7525FA29+25]
-	RtlGetAppContainerNamedObjectPath [0x771E7A9E+286]
-	RtlGetAppContainerNamedObjectPath [0x771E7A6E+238]
-</msg>
 </errors>
 </robot>
